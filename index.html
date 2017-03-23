@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/css/themes/beagle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jQuery-flexImages/1.0.4/jquery.flex-images.css">
+    <link rel="stylesheet" href="css/colorpicker.css">
+    <link rel="stylesheet" href="css/oEmbed.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Resource style -->
+    <!-- Modernizr -->
+    <title></title>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <!-- <header class="page">
+        <div class="progress"></div>
+        <div class="left"><span class="button preview"><i class="ion-eye"></i></span></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </header> -->
+    <div class="sidebar">
+        <div class="header">
+            <!-- <span>Just a lonely sidebar</span> -->
+            <span class="right close"><i class="ion-close"></i></span>
+            <button class="local-file-button" data-auto="image-picker-button-local-file">Upload photo<input name="filesToUpload[]" id="imageEmbed" type="file" title="Select an image file" accept=".jpg,.jpeg,.png,image/jpeg,image/png"></button>
+            <div class="or-delimiter-wrap"><p class="or-delimiter">or</p></div>
+            <!-- <input class="search" type="text" placeholder="search" /> -->
+            <div class="search-container">
+                <span class="icon"><i class="ion-search"></i></span>
+                <button type="submit" ><i class="ion-android-arrow-forward"></i></button>
+                <input class="search" type="search" id="search" placeholder="Search Flickr..." />
+            </div>
+
+
+        </div>
+        <div class="inner"></div>
+    </div>
+    <div class="body wrap" id="export">
+        <div class="cover section active">
+            <div class="image" style="background-image: url(demo/JDAY_Win_Players_1200x800.57d9bf2585263.jpg);">
+                <img id="coverImg" src="demo/JDAY_Win_Players_1200x800.57d9bf2585263.jpg">
+            </div>
+            <header class="cover-wrap">
+                <div class="copy text middle center">
+                    <h1 class="title">
+                    <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="1" data-placeholder="Add a Title">TaylorMade Tour Diaries</span>
+                    </h1>
+                    <h2 class="subtitle">
+                        <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="2" data-placeholder="Add a Subtitle">Jason Day - 2016 The Players Champion</span>
+                    </h2>
+
+                    <div class="swatches">
+                        <span class="swatch colorVibrant"></span>
+                        <span class="swatch colorMuted"></span>
+                        <span class="swatch colorDarkVibrant"></span>
+                        <span class="swatch colorDarkMuted"></span>
+                        <span class="swatch colorLightVibrant"></span>
+                        <!-- <span class="swatch colorLightMuted"></span> -->
+                        <span class="swatch colorLight">&nbsp;</span>
+                        <span class="swatch colorDark">&nbsp;</span>
+                        <span class="swatch custom "><input id="accentColor" data-format="rgb" data-opacity=".6" value="rgba(181,181,181, 0.6)"><i class="ion-edit"></i></span>
+                    </div>
+                </div>
+                <div class="overlay hide">
+                    <button class="left" data-h="left" data-v="top"></button>
+                    <button class="center" data-h="center" data-v="top"></button>
+                    <button class="right" data-h="right" data-v="top"></button>
+                    <button class="left" data-h="left" data-v="middle"></button>
+                    <button class="center" data-h="center" data-v="middle"></button>
+                    <button class="right" data-h="right" data-v="middle"></button>
+                    <button class="left" data-h="left" data-v="bottom"></button>
+                    <button class="center" data-h="center" data-v="bottom"></button>
+                    <button class="right" data-h="right" data-v="bottom"></button>
+                </div>
+                <span class="button split"><i class="ion-shuffle"></i></span>
+                <span class="button position"><i class="edit ion-arrow-move"></i><i class="done ion-checkmark"></i></span>
+                <span class="button upload"><i class="edit ion-upload"></i><input name="filesToUpload[]" id="filesToUpload" type="file" title="Select an image file"></span>
+                <span class="button preview"><i class="ion-eye"></i></span>
+            </header>
+        </div>
+        <div class="main">
+
+        <div class="progress"></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-lz-type="text" data-lz-position="left" data-disable-return="true" contenteditable="true" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="bbf9b89c-ae5a-5390-61fb-eda4d836c5a9">
+                <p class="dropcaps">With any athlete, winning is never automatic—it is a long and rigorous process that requires passion, dedication, and determination. Despite Jason’s success in the 2015 PGA Tour season, even the best player in the world needs to continuously improve and embrace all the tools that provide optimized performance. Throughout this season, Jason has been meticulous with testing new equipment—from drivers to putters—to find an advantage against the field that he can leverage to continue his winning ways.
+                <!--  --></p>
+            </div>
+            <div class="is-editable section video" data-lz-type="video" contenteditable="true" >
+                <div class="embed-container"><a href="https://www.youtube.com/watch?v=TgaBG1J_cNI" class="embed"></a></div>
+            </div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="2" medium-editor-index="46e43429-654e-f036-65ee-e4d374b0db86">To capture the process that the World No.1 has gone through ahead of his win at THE PLAYERS Championship, here is an in-depth overview of the development of Jason’s bag:</div>
+            <div class="is-editable section image" data-lz-type="image" contenteditable="true">
+                <div class="image-wrapper embed item" data-w="1157" data-h="305">
+                    <img src="demo/in_the_bag.57d9c62450271.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="3" medium-editor-index="7fbea156-c408-952c-f085-2646bd4edb9f"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="3" medium-editor-index="8855004d-e4c7-96bf-eeaf-80f958b2ddab">
+                <h2>Driver</h2></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="4" medium-editor-index="e61a140b-1881-7d2c-0ce9-1178a4ae6731"><b>M1 460cc 10.5* Driver</b> with Mitsubishi KuroKage S TiNi 70X shaft tipped 1"</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="5" medium-editor-index="4b5eed87-8015-a44e-13fc-19acc9612071"><b>Key Stat:</b> 311.5 Driving Average (1st)</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="6" medium-editor-index="647da0be-f54b-03e4-d66e-e740f7b0b0c2">
+                <div class="image-wrapper embed item" data-w="1024" data-h="683">
+                    <img src="demo/daysnumbers.57d9c1830bd7e.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="7" medium-editor-index="75e1227d-c1d1-e4d7-04e7-d7ced45dcc50">A snapshot of M1's potential in the hands of Jason Day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-lz-type="text" data-disable-return="true" contenteditable="true" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="40bbb6f7-7d26-01dd-c0fc-d69481d3ae0e">
+                <p>Jason was first introduced to the M1 two months before it was released to the golf world in September of 2015. The lightweight carbon crown allowed us to place more mass even lower and more forward than ever, which is perfect for a player like Jason. The first tournament after the M1 was introduced to the public was the 2015 BMW Championship. Jason put it in play for the first time that week… and won. He’s been playing it ever since.
+                    <br>
+                </p>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="7" medium-editor-index="1dd3f5d4-4d7d-3a45-12a1-7279ace99c11">
+                <h2>Fairway</h2></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="8" medium-editor-index="bb5b4c75-b628-f4d9-b610-f637e2a24883"><b>M2 17° 3-Wood</b> with Mitsubishi Rayon KuroKage S TiNi 80X shaft tipped 1.5″</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="9" medium-editor-index="0adcd029-92d5-d5db-d1fe-acf17fd55abd"><b>Key Stat:</b> 11.157 in Strokes Gained Tee to Green (3rd)</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="10" medium-editor-index="3cf09f49-8ffd-beaf-a7ea-c1328dbf0071">
+                <div class="image-wrapper embed item" data-w="1024" data-h="683">
+                    <img src="demo/020816_Pebble_06749_1024x683.57d9c1a2694da.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="11" medium-editor-index="72d6d7d5-619a-0bea-15d2-27834ba73fc0">Jason Day's UnFairway numbers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="11" medium-editor-index="d283bfb3-441c-de2d-b5fd-b8fe66ac9633">Jason first tried the M2 fairway at a photo shoot earlier this year and couldn’t believe how hot it was performing. The lower CG of the M2 fairway resulted in less spin off the tee, which had Jason carrying it 285 to a total distance of 295-300 yards. Off the deck, he was still carrying it closer to 265 yards (275 yards total), which better aligns with his traditional 3-wood gapping. Essentially, the M2 fairway has given Jason more distance where it matters most—off the tee, which is why he coined it the “UnFairway.”</div>
+            <div class="is-editable wysiwyg section image medium-editor-element stretch" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="12" medium-editor-index="dc91e550-9a44-47fd-780f-cfb0e47e100c">
+                <div class="image-wrapper embed item" data-w="1024" data-h="683">
+                    <img src="demo/unspecified_5_1024x683.57d9c1f3efd37.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="13" medium-editor-index="f7d7c6c5-6489-3eae-f17b-1013f055c014">Jason ripping his RSi TP irons.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="13" medium-editor-index="1b463cac-d7f5-851d-15e4-9c6cf3be5590">
+                <h2>Irons</h2></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="14" medium-editor-index="1c8fe679-8103-1803-a69c-a031eeab6a7e"><b>RSi TP 4-PW + RSi 2-iron</b> with True Temper Dynamic Gold X7 shafts</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="15" medium-editor-index="8c20089a-2722-97dd-17d2-e5559467e3c5"><b>Key Stat:</b> 72.22% (52/72) of Greens in Regulation (T15)</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="16" medium-editor-index="232c2595-f213-d621-b043-4c74af630351">Day rotates between a UDI (Ultimate Driving Iron), RSi TP, and RSi 2 2-iron. This week he played the RSi2 2-iron. Whichever he games is primarily a result of turf conditions for optimized distance. When Jason arrived to the course on Monday, the RSi 2 2-iron was performing the best, yielding some serious roll-out despite the soft conditions.</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="5b1d0257-f931-0628-8228-9f18058063b3">Jason still games RSi TP as they have a bit more offset than PSi Tour, helping Jason move the ball right-to-left, which is his ideal shot shape. That being said, Jason loves technology and will take all the forgiveness he can get, which has him interested in PSi Tour. On the Monday heading into THE PLAYERS, Jason requested a set of PSi Tour bent for more offset to take advantage the improved sound and feel that PSi provides. We wouldn’t be surprised to see them in the bag in the near future.</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="e2883df6-dce2-ddc1-5183-976bef3d5477">Day’s iron shafts are also a testament to him as an athlete. He used to game Project X Rifle shafts but wanted something to reduce spin and launch. True Temper essentially built a Dynamic Gold X100 on steroids, which are the Dynamic Gold X7 shafts Jason plays today. The X7s are stiffer, heavier and designed for extremely strong golfers with abnormally high club head speeds.</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="19" medium-editor-index="fdac7202-629b-e9da-4e11-07d5f51f6c3a">
+                <h2>Wedges</h2></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="20" medium-editor-index="b0d4b94f-0add-d9d6-e654-3ff6565be9e0"><b>Tour Preferred EF</b> 47° Tour Grind + 52° &amp; 60° ATV Grind with True Temper Dynamic Gold Tour Issue S400 shafts</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="21" medium-editor-index="53a0aff4-f74b-ff3b-cb52-e5bf8c1cdb59"><b>Key Stat:</b> 85.71% (6/7) in Sand Saves (T4)</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="23" medium-editor-index="8859f5e5-d7cb-af84-74c6-a93ce0501c90">
+                <div class="image-wrapper embed item" data-w="1024" data-h="717">
+                    <img src="demo/Day_chip_Dell_MP_1024x717.57d9c22a9a365.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="24" medium-editor-index="dc748a5d-799c-bc86-4826-ba91b84acc51">Day was one of the first players to arrive at TPC Sawgrass where he spent all day Monday dialing in his wedges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="22" medium-editor-index="669bdfb9-3f3e-7667-c701-296cfb619e89">Day has played Tour Preferred EF wedges since last season. While his lofts vary from tournament to tournament, he rarely games a 60° wedge. However, he decided to add it into his bag for THE PLAYERS considering the small greens at TPC Sawgrass. Missing a green at Sawgrass requires shots to get up quick and stop fast, and the 60° Tour Preferred EF gave him the best opportunity to execute such a shot.</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="24" medium-editor-index="46fbad98-270a-b832-fc01-da5ed0d84d77">
+                <h2>Putter</h2></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="25" medium-editor-index="1327fef9-81ba-9a4c-fe2c-184800005772"><b>Red Spider Limited Putter</b></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="26" medium-editor-index="5e067bc6-e91e-03e7-d2b5-296ff0cf693c"><b>Key Stat:</b> 1.450 in Strokes Gained Putting (8th)</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="27" medium-editor-index="1605192e-d565-af73-598b-ef2221e0268a">
+                <div class="image-wrapper embed item" data-w="1024" data-h="682">
+                    <img src="demo/Spider_Lim_JDAY_1024x682.57d9c27e08077.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="28" medium-editor-index="f1005239-f26c-58a6-8eaf-74062c269418">Jason Day's Spider Limited Red Putter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="28" medium-editor-index="07e8e298-d4eb-2608-ac4f-775ea800d7de">The last thing we expected Jason to change after his breakout 2015 season was his putter. After finishing #2 in putting average last year, Jason reached out to our putter development team with a special request at the end of the season. Jason has long loved the color red. Not only is red donned by the Australian flag, but it also has a tie to an infamous Australian arachnid–the Redback Spider. Gaming an Itsy Bitsy <b><i>Spider</i></b> putter, Jason thought it would be cool to pay homage to the Redback by adding a matte red finish to an Itsy Bitsy Spider putter. For Jason to win with the Spider Limited Red after only two tournaments leads us to believe it has earned a spot in the bag for good.</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="29" medium-editor-index="93b607fd-e53b-da67-4117-cbe907320bd1">
+                <h2>Golf Ball</h2></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="30" medium-editor-index="bb859460-6efe-197f-6d3c-675a03171fd7"><b>Tour Preferred X #87 Golf Ball</b></div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="31" medium-editor-index="4f12290b-a2c7-cf63-bf0e-1227e0672261"><b>Key Stat:</b> 16.956 Strokes Gained on the field (1st)</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="32" medium-editor-index="cb7abd01-6538-88cc-4850-206c11272923">
+                <div class="image-wrapper embed item" data-w="1024" data-h="682">
+                    <img src="demo/1024x682xGettyImages.57d9c47384627.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="33" medium-editor-index="cff6de5d-8a44-5c73-ad13-51cde20bad71"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="33" medium-editor-index="3095e665-119f-9af0-9927-06ed099edef0">Jason Day didn’t think twice about upgrading to the 2016 Tour Preferred X when we introduced it earlier this season. All TaylorMade Tour athletes who play are golf ball genuinely love it. Jason’s game is ideal for the Tour Preferred X as he needs minimal spin with his long irons considering how hard and high he hits it. Having less spin with irons is key for players who hit it high and far in order to keep control of their golf ball. He also stamps his ball with a kangaroo to pay homage to his home country of Australia. He also dons the #87 for his year of birth.</div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+            <div class="is-editable wysiwyg section image medium-editor-element stretch" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="34" medium-editor-index="8507a116-7d12-59ad-0034-e480c846ab20">
+                <div class="image-wrapper embed item" data-w="1920" data-h="400">
+                        alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="35" medium-editor-index="9b03caf3-ddb2-83e5-13f9-926c161eef8b"></p>
+                    </div>
+                    <div class="actions"><i class="button remove ion-close"></i><i class="button ion-arrow-shrink" data-lz-size="fit"></i><i class="button ion-arrow-expand" data-lz-size="full"></i></div>
+                </div>
+            </div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="35" medium-editor-index="7ae23a04-f90b-6695-1912-cc6fee337ba0">
+                <h2>Player History</h2></div>
+            <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="36" medium-editor-index="d210d989-c4fd-7430-087b-6caeb4ceba44">Jason Day, born November 12, 1987, is an Australian professional golfer and PGA Tour member. He is the current World Number 1 in the World Golf Ranking, having first achieved the ranking in September 2015 . Day first broke into the world's top ten in June 2011, rising to world number nine after his runner-up finish at the U.S. Open. In February 2014, Day won his first WGC title, the WGC-Accenture Match Play Championship and would win it for a second time in 2016. With his 2016 win, he joined the elite company of Tiger Woods and Geoff Ogilvy as the only multiple winners of the WGC Match Play. He went on to win his first major tournament at the 2015 PGA Championship, scoring a record 20 strokes under par and rising to number three in the world rankings.</div>
+            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="37" medium-editor-index="3458add2-72d2-15ab-61a2-afd11d17981d">
+                <div class="image-wrapper embed item" data-w="1920" data-h="480">
+                    <img src="demo/JasonDayHero_new.57d9c435ae91c.png" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
+        </div>
+    <div class="export">
+        <input type="button" id="btnSave" value="Save PNG"/>
+        <div id="img-out"></div>
+    </div>
+    </div>
+    <!-- .project-content -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/js/medium-editor.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vibrant.js"></script>
+    <script src="js/colorpicker.js"></script>
+    <script src="js/flexImages.js"></script>
+    <script src="js/oEmbed.js"></script>
+    <script src="//apis.google.com/js/api.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Resource jQuery -->
+</body>
+
+</html>

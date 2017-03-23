@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/css/themes/beagle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jQuery-flexImages/1.0.4/jquery.flex-images.css">
+    <link rel="stylesheet" href="css/colorpicker.css">
+    <link rel="stylesheet" href="css/oEmbed.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Resource style -->
+    <!-- Modernizr -->
+    <title></title>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <!-- <header class="page">
+        <div class="progress"></div>
+        <div class="left"><span class="button preview"><i class="ion-eye"></i></span></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </header> -->
+    <div class="sidebar">
+        <div class="header">
+            <!-- <span>Just a lonely sidebar</span> -->
+            <span class="right close"><i class="ion-close"></i></span>
+            <button class="local-file-button" data-auto="image-picker-button-local-file">Upload photo<input name="filesToUpload[]" id="imageEmbed" type="file" title="Select an image file" accept=".jpg,.jpeg,.png,image/jpeg,image/png"></button>
+            <div class="or-delimiter-wrap"><p class="or-delimiter">or</p></div>
+            <!-- <input class="search" type="text" placeholder="search" /> -->
+            <div class="search-container">
+                <span class="icon"><i class="ion-search"></i></span>
+                <button type="submit" ><i class="ion-android-arrow-forward"></i></button>
+                <input class="search" type="search" id="search" placeholder="Search Flickr..." />
+            </div>
+
+
+        </div>
+        <div class="inner"></div>
+    </div>
+    <div class="body wrap">
+        <div class="cover section active">
+            <div class="image">
+                <img id="coverImg" src="">
+            </div>
+            <header class="cover-wrap">
+                <div class="copy text middle center">
+                    <h1 class="title">
+                    <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="1" data-placeholder="Add a Title"></span>
+                    </h1>
+                    <h2 class="subtitle">
+                        <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="2" data-placeholder="Add a Subtitle"></span>
+                    </h2>
+
+                    <div class="swatches">
+                        <span class="swatch colorVibrant"></span>
+                        <span class="swatch colorMuted"></span>
+                        <span class="swatch colorDarkVibrant"></span>
+                        <span class="swatch colorDarkMuted"></span>
+                        <span class="swatch colorLightVibrant"></span>
+                        <!-- <span class="swatch colorLightMuted"></span> -->
+                        <span class="swatch colorLight">&nbsp;</span>
+                        <span class="swatch colorDark">&nbsp;</span>
+                        <span class="swatch custom "><input id="accentColor" data-format="rgb" data-opacity=".6" value="rgba(181,181,181, 0.6)"><i class="ion-edit"></i></span>
+                    </div>
+                </div>
+                <div class="overlay hide">
+                    <button class="left" data-h="left" data-v="top"></button>
+                    <button class="center" data-h="center" data-v="top"></button>
+                    <button class="right" data-h="right" data-v="top"></button>
+                    <button class="left" data-h="left" data-v="middle"></button>
+                    <button class="center" data-h="center" data-v="middle"></button>
+                    <button class="right" data-h="right" data-v="middle"></button>
+                    <button class="left" data-h="left" data-v="bottom"></button>
+                    <button class="center" data-h="center" data-v="bottom"></button>
+                    <button class="right" data-h="right" data-v="bottom"></button>
+                </div>
+                <span class="button split"><i class="ion-shuffle"></i></span>
+                <span class="button position"><i class="edit ion-arrow-move"></i><i class="done ion-checkmark"></i></span>
+                <span class="button upload"><i class="edit ion-upload"></i><input name="filesToUpload[]" id="filesToUpload" type="file" title="Select an image file"></span>
+                <span class="button preview"><i class="ion-eye"></i></span>
+            </header>
+        </div>
+        <div class="main">
+            <div class="section"></div>
+        </div>
+    </div>
+    <!-- .project-content -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/js/medium-editor.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vibrant.js"></script>
+    <script src="js/colorpicker.js"></script>
+    <script src="js/flexImages.js"></script>
+    <script src="js/oEmbed.js"></script>
+    <script src="//apis.google.com/js/api.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Resource jQuery -->
+</body>
+
+</html>
