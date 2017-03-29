@@ -32,16 +32,18 @@
         <div class="header">
             <!-- <span>Just a lonely sidebar</span> -->
             <span class="right close"><i class="ion-close"></i></span>
-            <button class="local-file-button" data-auto="image-picker-button-local-file">Upload photo<input name="filesToUpload[]" id="imageEmbed" type="file" title="Select an image file" accept=".jpg,.jpeg,.png,image/jpeg,image/png"></button>
-            <div class="or-delimiter-wrap"><p class="or-delimiter">or</p></div>
+            <button class="local-file-button" data-auto="image-picker-button-local-file">Upload photo
+                <input name="filesToUpload[]" id="imageEmbed" type="file" title="Select an image file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+            </button>
+            <div class="or-delimiter-wrap">
+                <p class="or-delimiter">or</p>
+            </div>
             <!-- <input class="search" type="text" placeholder="search" /> -->
             <div class="search-container">
                 <span class="icon"><i class="ion-search"></i></span>
-                <button type="submit" ><i class="ion-android-arrow-forward"></i></button>
+                <button type="submit"><i class="ion-android-arrow-forward"></i></button>
                 <input class="search" type="search" id="search" placeholder="Search Flickr..." />
             </div>
-
-
         </div>
         <div class="inner"></div>
     </div>
@@ -51,14 +53,13 @@
                 <img id="coverImg" src="demo/JDAY_Win_Players_1200x800.57d9bf2585263.jpg">
             </div>
             <header class="cover-wrap">
-                <div class="copy text middle center">
+                <div class="copy text top right">
                     <h1 class="title">
-                    <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="1" data-placeholder="Add a Title">TaylorMade Tour Diaries</span>
+                    <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="1" data-placeholder="Add a Title" style="background-color: rgba(34, 36, 21, 0.6); color: rgb(255, 255, 255);">TaylorMade Tour Diaries</span>
                     </h1>
                     <h2 class="subtitle">
-                        <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="2" data-placeholder="Add a Subtitle">Jason Day - 2016 The Players Champion</span>
+                        <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="2" data-placeholder="Add a Subtitle" style="background-color: rgba(34, 36, 21, 0.6); color: rgb(255, 255, 255);">Jason Day - 2016 The Players Champion</span>
                     </h2>
-
                     <div class="swatches">
                         <span class="swatch colorVibrant"></span>
                         <span class="swatch colorMuted"></span>
@@ -82,21 +83,35 @@
                     <button class="center" data-h="center" data-v="bottom"></button>
                     <button class="right" data-h="right" data-v="bottom"></button>
                 </div>
-                <span class="button split"><i class="ion-shuffle"></i></span>
+                <!-- <span class="button split"><i class="ion-shuffle"></i></span>
                 <span class="button position"><i class="edit ion-arrow-move"></i><i class="done ion-checkmark"></i></span>
                 <span class="button upload"><i class="edit ion-upload"></i><input name="filesToUpload[]" id="filesToUpload" type="file" title="Select an image file"></span>
-                <span class="button preview"><i class="ion-eye"></i></span>
+                <span class="button preview"><i class="ion-eye"></i></span> -->
+                <nav class="menu">
+                    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                    <label class="menu-open-button" for="menu-open">
+                        <span class="hamburger hamburger-1"></span>
+                        <span class="hamburger hamburger-2"></span>
+                        <span class="hamburger hamburger-3"></span>
+                    </label>
+                    <a href="#" class="menu-item split"><i class="ion-shuffle"></i> </a>
+                    <a href="#" class="menu-item position"><i class="edit ion-arrow-move"></i><i class="done ion-checkmark"></i> </a>
+                    <a href="#" class="menu-item upload"><i class="edit ion-upload"></i><input name="filesToUpload[]" id="filesToUpload" type="file" title="Select an image file"> </a>
+                    <a href="#" class="menu-item preview"><i class="ion-eye"></i> </a>
+                </nav>
             </header>
         </div>
         <div class="main">
-
-        <div class="progress"></div>
+            <div class="progress"></div>
             <div class="is-editable wysiwyg section text medium-editor-element" data-lz-type="text" data-lz-position="left" data-disable-return="true" contenteditable="true" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="bbf9b89c-ae5a-5390-61fb-eda4d836c5a9">
                 <p class="dropcaps">With any athlete, winning is never automatic—it is a long and rigorous process that requires passion, dedication, and determination. Despite Jason’s success in the 2015 PGA Tour season, even the best player in the world needs to continuously improve and embrace all the tools that provide optimized performance. Throughout this season, Jason has been meticulous with testing new equipment—from drivers to putters—to find an advantage against the field that he can leverage to continue his winning ways.
-                <!--  --></p>
+                    <!--  -->
+                </p>
             </div>
-            <div class="is-editable section video" data-lz-type="video" contenteditable="true" >
-                <div class="embed-container"><a href="https://www.youtube.com/watch?v=TgaBG1J_cNI" class="embed"></a></div>
+            <div class="is-editable section video" data-lz-type="video" contenteditable="true">
+                <div class="embed-container">
+                    <a href="https://www.youtube.com/watch?v=TgaBG1J_cNI" class="embed"></a>
+                </div>
             </div>
             <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="2" medium-editor-index="46e43429-654e-f036-65ee-e4d374b0db86">To capture the process that the World No.1 has gone through ahead of his win at THE PLAYERS Championship, here is an in-depth overview of the development of Jason’s bag:</div>
             <div class="is-editable section image" data-lz-type="image" contenteditable="true">
@@ -175,7 +190,7 @@
             <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
             <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="21" medium-editor-index="53a0aff4-f74b-ff3b-cb52-e5bf8c1cdb59"><b>Key Stat:</b> 85.71% (6/7) in Sand Saves (T4)</div>
             <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
-            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="23" medium-editor-index="8859f5e5-d7cb-af84-74c6-a93ce0501c90">
+            <div class="is-editable wysiwyg section image medium-editor-element stretch left" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="23" medium-editor-index="8859f5e5-d7cb-af84-74c6-a93ce0501c90">
                 <div class="image-wrapper embed item" data-w="1024" data-h="717">
                     <img src="demo/Day_chip_Dell_MP_1024x717.57d9c22a9a365.png" alt="">
                     <div class="bottom">
@@ -211,7 +226,7 @@
             <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
             <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="31" medium-editor-index="4f12290b-a2c7-cf63-bf0e-1227e0672261"><b>Key Stat:</b> 16.956 Strokes Gained on the field (1st)</div>
             <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
-            <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="32" medium-editor-index="cb7abd01-6538-88cc-4850-206c11272923">
+            <div class="is-editable wysiwyg section image medium-editor-element stretch right" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="32" medium-editor-index="cb7abd01-6538-88cc-4850-206c11272923">
                 <div class="image-wrapper embed item" data-w="1024" data-h="682">
                     <img src="demo/1024x682xGettyImages.57d9c47384627.png" alt="">
                     <div class="bottom">
@@ -224,19 +239,45 @@
             <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
             <div class="is-editable wysiwyg section image medium-editor-element stretch" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="34" medium-editor-index="8507a116-7d12-59ad-0034-e480c846ab20">
                 <div class="image-wrapper embed item" data-w="1920" data-h="400">
-                        alt="">
+                    <img src="demo/JasonDayHero_new.57d9c435ae91c.png" alt="">
                     <div class="bottom">
                         <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="35" medium-editor-index="9b03caf3-ddb2-83e5-13f9-926c161eef8b"></p>
                     </div>
-                    <div class="actions"><i class="button remove ion-close"></i><i class="button ion-arrow-shrink" data-lz-size="fit"></i><i class="button ion-arrow-expand" data-lz-size="full"></i></div>
                 </div>
             </div>
             <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="35" medium-editor-index="7ae23a04-f90b-6695-1912-cc6fee337ba0">
                 <h2>Player History</h2></div>
             <div class="is-editable wysiwyg section text medium-editor-element" data-row-height="600" data-lz-type="text" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="36" medium-editor-index="d210d989-c4fd-7430-087b-6caeb4ceba44">Jason Day, born November 12, 1987, is an Australian professional golfer and PGA Tour member. He is the current World Number 1 in the World Golf Ranking, having first achieved the ranking in September 2015 . Day first broke into the world's top ten in June 2011, rising to world number nine after his runner-up finish at the U.S. Open. In February 2014, Day won his first WGC title, the WGC-Accenture Match Play Championship and would win it for a second time in 2016. With his 2016 win, he joined the elite company of Tiger Woods and Geoff Ogilvy as the only multiple winners of the WGC Match Play. He went on to win his first major tournament at the 2015 PGA Championship, scoring a record 20 strokes under par and rising to number three in the world rankings.</div>
+            <div class="is-editable wysiwyg section grid flex-images medium-editor-element active" data-row-height="600" data-lz-type="grid flex-images" data-disable-return="true" data-placeholder="..." contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="2" medium-editor-index="c2946acb-6a74-b031-52b7-f17d1c689007" data-medium-focused="true">
+                <div class="image-wrapper embed item" data-w="1024" data-h="981" style="width: 432px; height: 414px; display: block;"><img src="https://farm6.staticflickr.com/5230/5636122229_87a9c588d2_b.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="6be20d9c-a4ad-e06c-c6e6-4bcd5dccb17f"></p>
+                    </div>
+                </div>
+                <div class="image-wrapper embed item" data-w="1024" data-h="716" style="width: 590px; height: 414px; display: block;"><img src="https://farm6.staticflickr.com/5303/5636698688_ef3d9264aa_b.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable medium-editor-element" contenteditable="true" data-placeholder="Image Caption" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="2d026cd4-9b26-58f3-e206-2b04aa4d39f0"></p>
+                    </div>
+                </div>
+                <div class="image-wrapper embed item" data-w="898" data-h="1024" style="width: 352px; height: 401px; display: block;"><img src="https://farm6.staticflickr.com/5182/5636178684_32b0d1f0f6_b.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"></p>
+                    </div>
+                </div>
+                <div class="image-wrapper embed item" data-w="608" data-h="1024" style="width: 239px; height: 401px; display: block;"><img src="https://farm6.staticflickr.com/5302/5636127167_6370f2e880_b.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"></p>
+                    </div>
+                </div>
+                <div class="image-wrapper embed item" data-w="1024" data-h="967" style="width: 423px; height: 401px; display: block;"><img src="https://farm6.staticflickr.com/5148/5635683509_5821830a93_b.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"></p>
+                    </div>
+                </div>
+            </div>
             <div class="is-editable wysiwyg section image medium-editor-element" data-row-height="600" data-lz-type="image" data-disable-return="true" data-placeholder="I am a new section" contenteditable="true" tabindex="" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="37" medium-editor-index="3458add2-72d2-15ab-61a2-afd11d17981d">
                 <div class="image-wrapper embed item" data-w="1920" data-h="480">
-                    <img src="demo/JasonDayHero_new.57d9c435ae91c.png" alt="">
+                    <img src="demo/taylor_made.57d9c69fc3ed6.png" alt="">
                     <div class="bottom">
                         <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"></p>
                     </div>
@@ -244,10 +285,10 @@
             </div>
             <div class="placeholder"><i class="ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>
         </div>
-    <div class="export">
-        <input type="button" id="btnSave" value="Save PNG"/>
-        <div id="img-out"></div>
-    </div>
+        <div class="export">
+            <input type="button" id="btnSave" value="Save PNG" />
+            <div id="img-out"></div>
+        </div>
     </div>
     <!-- .project-content -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/js/medium-editor.min.js"></script>
@@ -259,6 +300,25 @@
     <script src="//apis.google.com/js/api.js"></script>
     <script src="js/app.js"></script>
     <!-- Resource jQuery -->
+    <!-- filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="shadowed-goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feComposite in2="shadow" in="goo" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+        </defs>
+    </svg>
 </body>
 
 </html>
