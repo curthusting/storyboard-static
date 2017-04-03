@@ -240,7 +240,7 @@ $(function() {
 
         $('.section:not(.cover)').each(function(index, $el) {
 
-            var placeholder = $('<div class="placeholder"><i  data-lz-type="text" class="insert ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>').insertAfter($el);
+            var placeholder = $('<div class="placeholder"><i data-lz-type="text" class="insert ion-plus-circled"></i><span class="type"><i data-lz-type="text" class="insert ion-compose"></i><i data-lz-type="grid flex-images" class="insert ion-grid"></i><i data-lz-type="image" class="insert ion-images"></i><i data-lz-type="video" class="insert ion-play"></i><i data-lz-type="audio" class="insert ion-music-note"></i></span></div>').insertAfter($el);
 
             $(placeholder).on('click', '.insert', function(el) {
                 var $el = $(this);
@@ -285,70 +285,70 @@ $(function() {
         });
 
 
-        // function handlepaste (e) {
-        //     var types, pastedData, savedContent;
+        function handlepaste (e) {
+            var types, pastedData, savedContent;
 
-        //     // Browsers that support the 'text/html' type in the Clipboard API (Chrome, Firefox 22+)
-        //     if (e && e.clipboardData && e.clipboardData.types && e.clipboardData.getData) {
+            // Browsers that support the 'text/html' type in the Clipboard API (Chrome, Firefox 22+)
+            if (e && e.clipboardData && e.clipboardData.types && e.clipboardData.getData) {
 
-        //         // Check for 'text/html' in types list. See abligh's answer below for deatils on
-        //         // why the DOMStringList bit is needed. We cannot fall back to 'text/plain' as
-        //         // Safari/Edge don't advertise HTML data even if it is available
-        //         types = e.clipboardData.types;
-        //         if (((types instanceof DOMStringList) && types.contains("text/html")) || (types.indexOf && types.indexOf('text/html') !== -1)) {
+                // Check for 'text/html' in types list. See abligh's answer below for deatils on
+                // why the DOMStringList bit is needed. We cannot fall back to 'text/plain' as
+                // Safari/Edge don't advertise HTML data even if it is available
+                types = e.clipboardData.types;
+                if (((types instanceof DOMStringList) && types.contains("text/html")) || (types.indexOf && types.indexOf('text/html') !== -1)) {
 
-        //             // Extract data and pass it to callback
-        //             pastedData = e.clipboardData.getData('text/html');
-        //             processPaste(editableDiv, pastedData);
+                    // Extract data and pass it to callback
+                    pastedData = e.clipboardData.getData('text/html');
+                    processPaste(editableDiv, pastedData);
 
-        //             // Stop the data from actually being pasted
-        //             e.stopPropagation();
-        //             e.preventDefault();
-        //             return false;
-        //         }
-        //     }
+                    // Stop the data from actually being pasted
+                    e.stopPropagation();
+                    e.preventDefault();
+                    return false;
+                }
+            }
 
-        //     // Everything else: Move existing element contents to a DocumentFragment for safekeeping
-        //     savedContent = document.createDocumentFragment();
-        //     while(editableDiv.childNodes.length > 0) {
-        //         savedContent.appendChild(editableDiv.childNodes[0]);
-        //     }
+            // Everything else: Move existing element contents to a DocumentFragment for safekeeping
+            savedContent = document.createDocumentFragment();
+            while(editableDiv.childNodes.length > 0) {
+                savedContent.appendChild(editableDiv.childNodes[0]);
+            }
 
-        //     // Then wait for browser to paste content into it and cleanup
-        //     waitForPastedData(editableDiv, savedContent);
-        //     return true;
-        // }
+            // Then wait for browser to paste content into it and cleanup
+            waitForPastedData(editableDiv, savedContent);
+            return true;
+        }
 
-        // function waitForPastedData (elem, savedContent) {
+        function waitForPastedData (elem, savedContent) {
 
-        //     // If data has been processes by browser, process it
-        //     if (elem.childNodes && elem.childNodes.length > 0) {
+            // If data has been processes by browser, process it
+            if (elem.childNodes && elem.childNodes.length > 0) {
 
-        //         // Retrieve pasted content via innerHTML
-        //         // (Alternatively loop through elem.childNodes or elem.getElementsByTagName here)
-        //         var pastedData = elem.innerHTML;
+                // Retrieve pasted content via innerHTML
+                // (Alternatively loop through elem.childNodes or elem.getElementsByTagName here)
+                var pastedData = elem.innerHTML;
 
-        //         // Restore saved content
-        //         elem.innerHTML = "";
-        //         elem.appendChild(savedContent);
+                // Restore saved content
+                elem.innerHTML = "";
+                elem.appendChild(savedContent);
 
-        //         // Call callback
-        //         processPaste(elem, pastedData);
-        //     }
+                // Call callback
+                processPaste(elem, pastedData);
+            }
 
-        //     // Else wait 20ms and try again
-        //     else {
-        //         setTimeout(function () {
-        //             waitForPastedData(elem, savedContent)
-        //         }, 20);
-        //     }
-        // }
+            // Else wait 20ms and try again
+            else {
+                setTimeout(function () {
+                    waitForPastedData(elem, savedContent)
+                }, 20);
+            }
+        }
 
-        // function processPaste (elem, pastedData) {
-        //     // Do whatever with gathered data;
-        //     alert(pastedData);
-        //     elem.focus();
-        // }
+        function processPaste (elem, pastedData) {
+            // Do whatever with gathered data;
+            alert(pastedData);
+            elem.focus();
+        }
 
         function cleanTags(str, allowed_tags) {
             // Strips HTML and PHP tags from a string
@@ -478,8 +478,8 @@ $(function() {
             var clipboardData, pastedData;
 
             // Stop data actually being pasted into div
-            event.stopPropagation();
-            event.preventDefault();
+            // event.stopPropagation();
+            // event.preventDefault();
 
             // Get pasted data via clipboard API
             clipboardData = event.clipboardData || window.clipboardData;
