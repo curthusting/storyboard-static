@@ -96,7 +96,7 @@ h6,
     width: 40px;
     padding: 0 0 20px 0;
     margin: 0 auto;
-    clear: both;
+    /*clear: both;*/
 
     font-size: 36px;
     line-height: 36px;
@@ -181,11 +181,13 @@ i {
     color: #838383;
 }
 .main .section {
-    max-width: 1040px;
+    max-width: 840px;
     /*max-width: 840px;*/
     padding: 20px;
     margin: 0 auto;
-    clear: both;
+    /*clear: both;*/
+
+    text-align: justify;
 }
 .main .section.full {
     max-width: initial;
@@ -649,16 +651,26 @@ i {
 }
 
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 600px) {
     .main .stretch.left,
     .main .stretch.right {
-        max-width: calc(520px  + 50%);
+        /*max-width: calc(520px  + 50%);*/
+        max-width: calc(50% - 20px);
     }
     .stretch.left {
-        margin-right: calc(100% / 2 - 1000px);
+        margin-right: 20px !important;
     }
     .stretch.right {
-        margin-left: calc(100% - 1000px);
+        margin-left: 20px !important;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .main .stretch.left,
+    .main .stretch.right {
+        /*max-width: calc(520px  + 50%);*/
+        max-width: calc(33.333% - 20px);
     }
 }
 
