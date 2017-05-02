@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/css/themes/beagle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jQuery-flexImages/1.0.4/jquery.flex-images.css">
+    <link rel="stylesheet" href="css/colorpicker.css">
+    <link rel="stylesheet" href="css/oEmbed.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Resource style -->
+    <!-- Modernizr -->
+    <title></title>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <!-- <header class="page">
+        <div class="progress"></div>
+        <div class="left"><span class="button preview"><i class="ion-eye"></i></span></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </header> -->
+    <div class="sidebar">
+        <div class="header">
+            <!-- <span>Just a lonely sidebar</span> -->
+            <span class="right close"><i class="ion-close"></i></span>
+            <button class="local-file-button" data-auto="image-picker-button-local-file">Upload photo
+                <input name="filesToUpload[]" id="imageEmbed" type="file" title="Select an image file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+            </button>
+            <div class="or-delimiter-wrap">
+                <p class="or-delimiter">or</p>
+            </div>
+            <!-- <input class="search" type="text" placeholder="search" /> -->
+            <div class="search-container">
+                <span class="icon"><i class="ion-search"></i></span>
+                <button type="submit"><i class="ion-android-arrow-forward"></i></button>
+                <input class="search" type="search" id="search" placeholder="Search Flickr..." />
+            </div>
+        </div>
+        <div class="inner"></div>
+    </div>
+    <div class="body wrap" id="export">
+        <div class="cover section active">
+            <div class="image" style="background-image: url(demo/ien/blank-park-zoo.jpg);">
+                <img id="coverImg" src="demo/ien/blank-park-zoo.jpg">
+            </div>
+            <header class="cover-wrap">
+                <div class="copy text bottom left">
+                    <h1 class="title">
+                    <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="1" data-placeholder="Add a Title" style="background-color: rgba(45, 76, 95, 0.6); color: rgb(255, 255, 255);">Stop the Train!</span>
+                    </h1>
+                    <h2 class="subtitle">
+                        <span class="is-editable color" data-disable-return="true" contenteditable="true" tabindex="2" data-placeholder="Add a Subtitle" style="background-color: rgba(45, 76, 95, 0.6); color: rgb(255, 255, 255);">Cost-effective pneumatic cylinders help the Blank Park Zoo keep their trains running reliably and worry-free.</span>
+                    </h2>
+                    <div class="swatches">
+                        <span class="swatch colorVibrant"></span>
+                        <span class="swatch colorMuted"></span>
+                        <span class="swatch colorDarkVibrant"></span>
+                        <span class="swatch colorDarkMuted"></span>
+                        <span class="swatch colorLightVibrant"></span>
+                        <!-- <span class="swatch colorLightMuted"></span> -->
+                        <span class="swatch colorLight">&nbsp;</span>
+                        <span class="swatch colorDark">&nbsp;</span>
+                        <span class="swatch custom "><input id="accentColor" data-format="rgb" data-opacity=".6" value="rgba(181,181,181, 0.6)"><i class="ion-edit"></i></span>
+                    </div>
+                </div>
+                <div class="overlay hide">
+                    <button class="left" data-h="left" data-v="top"></button>
+                    <button class="center" data-h="center" data-v="top"></button>
+                    <button class="right" data-h="right" data-v="top"></button>
+                    <button class="left" data-h="left" data-v="middle"></button>
+                    <button class="center" data-h="center" data-v="middle"></button>
+                    <button class="right" data-h="right" data-v="middle"></button>
+                    <button class="left" data-h="left" data-v="bottom"></button>
+                    <button class="center" data-h="center" data-v="bottom"></button>
+                    <button class="right" data-h="right" data-v="bottom"></button>
+                </div>
+                <!-- <span class="button split"><i class="ion-shuffle"></i></span>
+                <span class="button position"><i class="edit ion-arrow-move"></i><i class="done ion-checkmark"></i></span>
+                <span class="button upload"><i class="edit ion-upload"></i><input name="filesToUpload[]" id="filesToUpload" type="file" title="Select an image file"></span>
+                <span class="button preview"><i class="ion-eye"></i></span> -->
+                <nav class="menu">
+                    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                    <label class="menu-open-button" for="menu-open">
+                        <span class="hamburger hamburger-1"></span>
+                        <span class="hamburger hamburger-2"></span>
+                        <span class="hamburger hamburger-3"></span>
+                    </label>
+                    <a href="#" class="menu-item split"><i class="ion-shuffle"></i> </a>
+                    <a href="#" class="menu-item position"><i class="edit ion-arrow-move"></i><i class="done ion-checkmark"></i> </a>
+                    <a href="#" class="menu-item upload"><i class="edit ion-upload"></i><input name="filesToUpload[]" id="filesToUpload" type="file" title="Select an image file"> </a>
+                    <a href="#" class="menu-item preview"><i class="ion-eye"></i> </a>
+                </nav>
+            </header>
+        </div>
+        <div class="main">
+            <div class="progress"></div>
+            <div class="wysiwyg section text">
+                <p class="dropcaps">The Blank Park Zoo in Des Moines, Iowa manages 49 acres of land with 22 acres developed into animal exhibits and other facilities. The exhibits house 104 different animal species and 1484 animal specimens cared for at the zoo. One of the many facilities is the train ride, and both the animals and the train ride require a lot of maintenance to keep them healthy and safe.</p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>The zoo operates two train engines and five passenger cars for scenic train rides. Both the engines and all the passenger cars use air brakes and operate a minimum of eight hours per day, seven days a week from April through October. The zoo has been in operation since the early 1960s. With one engine over 12-years old and the spare engine over 50-years old, required preventative maintenance was starting to wear out some components on the trains.</p>
+            </div>
+            <div class="wysiwyg section image stretch" data-lz-type="image" contenteditable="true">
+                <div class="image-wrapper embed item"><img src="/demo/ien/train.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"><b>Figure 1</b> Two train engines engines and five passenger cars use air brakes and operate a minimum of eight hours per day, seven days a week from April through October. <em class="credit wysiwyg is-editable" contenteditable="" data-placeholder="Image Credit">- Image courtesy of Blank Park Zoo</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="wysiwyg section text">
+                <h2>Brake Issues</h2></div>
+            <div class="wysiwyg section text">
+                <p>The zoo has two train engines, one is spare, and five cars. Each engine and car has two trucks. A truck is a set of four wheels and two axles mounted to a pivoting frame to handle curved train tracks. Each wheel on the engine or car has a brake, so 56 brakes and related cylinders are required.</p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>To stop the train, the engineer operates a brake lever that supplies air to the pneumatic brake cylinders. The farther the lever is pushed, the faster the air flows. Each brake cylinder operates a brake actuator lever with a brake shoe attached. Each brake shoe directly pushes on the train wheel, just like a real train. There is also a mechanical emergency drum brake for use should a brake pneumatic air line fail.</p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>The zoo’s maintenance department determined the train’s brake cylinders should be replaced. New parts were needed to pass maintenance inspections. Also, the original cylinder design was dated. The brake cylinders had been in use for years with the same cylinders on the 1960s-vintage train as on the early 2000s-vintage train.</p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>These were custom brake cylinders made by the original train manufacturer, and the company was finding it hard to get new ones. If a train engine goes down because of a brake problem, it’s out of service, disappointing many children and losing revenue for the zoo. Although the cylinders have been rebuilt, one can only hone the inside diameter so many times before the cylinders start to leak and cause problems. New brake cylinders, from the original manufacturer, were expensive and had reliability concerns.</p>
+            </div>
+            <div class="wysiwyg section image stretch right" data-lz-type="image" contenteditable="true">
+                <div class="image-wrapper embed item"><img src="/demo/ien/todays-designer.jpeg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"><b>Figure 2</b> Each train wheel brake air cylinder was upgraded to this NITRA air cylinder, improving brake system reliability and greatly reducing maintenance costs. <em class="credit wysiwyg is-editable" contenteditable="" data-placeholder="Image Credit">- Image courtesy of Blank Park Zoo</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="wysiwyg section text">
+                <h2>Replacing the Brake Cylinders</h2></div>
+            <div class="wysiwyg section text">
+                <p>After measuring the original brake cylinders, and, while browsing the internet, zoo maintenance manager Allen Schroder found AutomationDirect NITRA air cylinders and many other valves, tubing and fittings needed for maintenance of the trains and their cars.</p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>The zoo outfitted both of its engines and some of the passenger cars with NITRA pneumatic air cylinders (Figure 2), and will continue upgrading until all cars are outfitted. These NITRA cylinders have 1-1/2 inch bore, 1 inch stroke and a single-acting rear-pivot mount. They work in conjunction with the NITRA rod clevis with hex nut and 7/16-20 UNF thread. The existing brake air cylinders look bigger, but the sidewalls are just thicker. </p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>The cylinder clevis connecting to the brake actuator lever was the same, but the team had to create an adapter to anchor the air cylinder to the frame. The adapter was custom fabricated and included a piece of 2 inch x 2 inch x ¼ inch thick angle iron two inches in length with four holes drilled in it. Another two inch long piece of 1 inch x ¼ inch flat with two holes drilled in it completed the mounting bracket.</p>
+            </div>
+            <div class="wysiwyg section image stretch right" data-lz-type="image" contenteditable="true">
+                <div class="image-wrapper embed item"><img src="/demo/ien/cylinder.jpg" alt="">
+                    <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"><b>Figure 3</b> <em class="credit wysiwyg is-editable" contenteditable="" data-placeholder="Image Credit">- Image courtesy of AutomationDirect.com</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="wysiwyg section text">
+                <p>The train can stop as quickly as necessary, and the zoo no longer worries about costly breakdowns and downtime due to faulty or worn out brake air cylinders. They also don’t have to wait weeks for replacement parts because they now order them from AutomationDirect and have them in a few days.</p>
+            </div>
+            <div class="wysiwyg section text">
+                <p>The NITRA pneumatic air cylinders were less than twenty percent of the cost of the cylinders from our previous supplier. With 56 cylinders needed for the train brake upgrade, that’s a savings of over $11,000.</p>
+            </div>
+            <div class="section image fit" >
+                <div class="image-wrapper embed item" data-w="1920" data-h="480">
+                    <img src="demo/ien/logo.jpg" alt="">
+                    <!-- <div class="bottom">
+                        <p class="caption wysiwyg is-editable" contenteditable="" data-placeholder="Image Caption"></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .project-content -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/js/medium-editor.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vibrant.js"></script>
+    <script src="js/colorpicker.js"></script>
+    <script src="js/flexImages.js"></script>
+    <script src="js/oEmbed.js"></script>
+    <script src="//apis.google.com/js/api.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Resource jQuery -->
+    <!-- filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="shadowed-goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feComposite in2="shadow" in="goo" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+
+</html>

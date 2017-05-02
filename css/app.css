@@ -189,10 +189,16 @@ i {
 
     text-align: justify;
 }
+.embed {
+    text-align: left;
+}
 .main .section.full {
     max-width: initial;
     padding: 20px 0;
     margin: 0;
+}
+.main .section.fit {
+    clear: both;
 }
 .title {
     width: 100%;
@@ -589,9 +595,11 @@ i {
 }
 
 .section.image .image-wrapper {
+    /*padding: 10px;*/
+    position: relative;
+
     width: calc(100% / 5);
     min-width: 300px;
-    /*padding: 10px;*/
 
     -webkit-box-flex: auto;
     -ms-flex: auto;
